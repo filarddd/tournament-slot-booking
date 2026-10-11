@@ -31,15 +31,15 @@ int main() {
                 printf("Available slots:\n");
                 for (int i = 0; i < 10; i++) {
                     if (slots[i] == 0) {
-                        printf("Slot %d is available\n", i);
+                        printf("Slot %d is available\n", i + 1);
                     }
                     if (slots[i] == 1) {
-                        printf("Slot %d is booked\n", i);
+                        printf("Slot %d is booked\n", i + 1);
                     }
                 }
                 break;
             case 3:
-                printf("Exiting the system. Goodbye!\n");
+                printf("Exiting the system. Goodbye!\n\n");
                 printf("Final slot status:\n");
                 for (int i = 0; i < 10; i++) {
                     if (slots[i] == 1) {
