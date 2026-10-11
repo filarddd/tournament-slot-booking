@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int slots [10] = 0;
+    int slots [10];
     int choice, slot, fullyBooked = 0;
 
     printf("Welcome to the Game Match Scheduling System!\n");
 
     while (1) {
-        printf("Please select an option:\n");
+        printf("\nPlease select an option:\n");
         printf("1. Book a slot\n");
         printf("2. View available slots\n");
-        printf("3. Exit\n");
+        printf("3. Exit\n\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -32,6 +32,9 @@ int main() {
                 for (int i = 0; i < 10; i++) {
                     if (slots[i] == 0) {
                         printf("Slot %d is available\n", i);
+                    }
+                    if (slots[i] == 1) {
+                        printf("Slot %d is booked\n", i);
                     }
                 }
                 break;
