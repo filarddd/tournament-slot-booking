@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int slots [10];
+    int slots [10] = {0};
     int choice, slot, fullyBooked = 0;
 
     printf("Welcome to the Game Match Scheduling System!\n");
@@ -48,6 +48,7 @@ int main() {
                         printf("Slot %d is available\n", i + 1);
                     }
                 }
+                fullyBooked = 1;
                 for (int i = 0; i < 10; i++) {
                     if (slots[i] == 0) {
                         fullyBooked = 0;
