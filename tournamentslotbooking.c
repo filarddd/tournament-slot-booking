@@ -4,7 +4,7 @@ int main() {
     int slots [10] = {0};
     int choice, slot, fullyBooked = 0;
 
-    printf("Welcome to the Game Match Scheduling System!\n");
+    printf("Welcome to the Tournament Slot Booking System!\n");
 
     while (1) {
         printf("\nPlease select an option:\n");
